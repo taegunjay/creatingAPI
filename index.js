@@ -1,6 +1,7 @@
-
+const cors = require("cors");
 const express = require("express");
 const app = express();
+app.use(cors());
 const parser = require("body-parser");
 const List = require("./models/nutrition");
 const nutrition = require("./models/nutrition");
