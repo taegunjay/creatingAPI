@@ -1,11 +1,11 @@
-const cors = require("cors");
 const express = require("express");
+const cors = require("cors");
 const app = express();
-app.use(cors());
 const parser = require("body-parser");
 const List = require("./models/nutrition");
 const nutrition = require("./models/nutrition");
 
+app.use(cors());
 app.use(parser.json());
 
 app.get("/", function (req, res) {
